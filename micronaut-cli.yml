@@ -1,0 +1,5 @@
+profile: service
+defaultPackage: micronaut.data.test.hibernate
+---
+testFramework: spek
+sourceLanguage: kotlin
