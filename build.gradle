@@ -22,7 +22,7 @@ configurations {
 }
 
 dependencies {
-    implementation platform("io.micronaut:micronaut-bom:$micronautVersion")
+    implementation platform("io.micronaut:micronaut-bom:${micronautVersion}")
     implementation "io.micronaut:micronaut-http-client"
     implementation "io.micronaut.configuration:micronaut-jdbc-hikari"
     implementation "io.micronaut.configuration:micronaut-hibernate-jpa"
@@ -31,10 +31,10 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
     implementation "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
     implementation "io.micronaut:micronaut-runtime"
-    kapt platform("io.micronaut:micronaut-bom:$micronautVersion")
+    kapt platform("io.micronaut:micronaut-bom:${micronautVersion}")
     kapt "io.micronaut:micronaut-inject-java"
     kapt "io.micronaut:micronaut-validation"
-    kaptTest platform("io.micronaut:micronaut-bom:$micronautVersion")
+    kaptTest platform("io.micronaut:micronaut-bom:${micronautVersion}")
     kaptTest "io.micronaut:micronaut-inject-java"
     runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
     runtimeOnly "com.h2database:h2"
